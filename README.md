@@ -1,13 +1,13 @@
 # UnaCloud
 ## Overview
-UnaCloud is a project developed by the research group COMIT (Comunicaciones y Tecnología de Información) from Universidad de los Andes, Colombia. It is an open source opportunistic cloud computing Infrastructure as a Service (IaaS) implementation which provides basic computing resources (processing, storage, and networking) to run arbitrary software, including operating systems and applications.
+UnaCloud es un proyecto desarrollado por el grupo de investigación COMIT(Comunicaciones y Tecnología de Información) de la universidad de los andes, Colombia. Es una oportunidad de nube en código abierto con una infraestructura computacional como servicio implementado el cual provee recursos básicos de computación (procesamiento, almacenamiento y trabajo de redes) para correr un software arbitrario, incluyendo sistema operativo y aplicaciones.
 
-UnaCloud is able to execute single instances and/or clusters of virtual machines. Its execution is mostly supported by off-the-shelf, volatile, non-dedicated, distributed, and heterogeneous computing resources (such as desktops) that belong to a variety of administrative domains on a university campus.
+UnaCloud esta disponible para ejecutar una instancia y/o grupos de maquinas virtuales. Esta ejecución es mayor mente sustentada por off-teh-shelf, volátil, indedicada, distribuida y heterogénea en los recursos de computación (como el escritorio) este pertenece a una variedad de dominios administrativos en el campus de la universidad.
+UnaCloud es una aplicación de servicio al cliente la cual puede ser usual mente usada para escritorios de sistemas operativos Windows o Linux (Debian, Ubuntu).
 
-UnaCloud is a Client-Server application which can be used currently in desktops with Windows or Linux (Debian, Ubuntu) operating systems. 
+##Características 
+UnaCloud usa la virtualización como estrategia para deshabilitar la demanda de empleados de ejecución personalizada del ambiente. Estos ambientes pueden conocer complejidad de software y hardware requeridos para muchos proyectos de investigación. UnaCloud usa hipervisor tipo-2 para aislar al ambiente del usuario final de otra base, y dedicado a, cultivación ociosa de recursos computacionales.
 
-## Features
-UnaCloud uses virtualization as a strategy to enable on-demand deployments of customized execution environments. These environments can meet complex software and hardware requirements from several research projects. UnaCloud uses type-2 hypervisors to isolate the end-user environment from another one based on, and dedicated to, harvesting idle computing resources.
 
 In addition, UnaCloud executes instances as independent idle-priority processes that run in background. This strategy allows the operating system to assign CPU time slices to higher-priority processes (e.g. foreground normal- priority processes executed by end-users). Both deployment strategies, virtualization and idle- priority execution, enable harvesting idle computing resources opportunistically, that is, execution instances are executed when an end-user is using the desktop or when it is fully idle (e.g. at night or during weekends when the computer laboratories are closed to the public).
 
